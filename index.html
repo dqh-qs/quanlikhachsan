@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Quản lí khách sạn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "app">
+        <header class = "header" >
+            
+            <div class="grid">  
+                <nav class = "header__navbar">
+                    <ul class="header_navbar-list"> 
+                        <li class="header__navbar-item header__navbar-item--qr header__navbar-item--separate">
+                            Trả tiền khách sạn
+                            <div class = "header__qr">
+                                <img src="./assets/img/qr_code.jpg" alt="QR code" class = "header__qr-img">
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                           <span class = "header__navbar-title--no-pointer">Kết nối</span>
+                           <a href="https://www.facebook.com/profile.php?id=100049491942277&mibextid=ZbWKwL">
+                               <i class=" header__navbar--icon fa-brands fa-facebook"></i>
+                           </a>
+                            <i class=" header__navbar--icon fa-solid fa-phone"></i></li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item"><i class=" header__navbar--icon fa-solid fa-bell"></i>Thông báo</li>
+                        <li class="header__navbar-item"><i class=" header__navbar--icon fa-sharp fa-solid fa-question"></i>Trợ giúp</li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng kí</li>   
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> 
+                       
+                    </ul>
+                </nav>
+
+                <div class = "header-with-search">
+                    <div class="header__logo">
+                        
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để xem giá các loại phòng">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-list-item">
+                                       <a href="">giá phòng loại thường</a> </li>
+                                    <li class="header__search-history-list-item">
+                                        <a href="">giá phòng loại vip</a> </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                       <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                       </button>
+                    </div>
+                    <div class="header__hotel">
+                        <i class="header__hotel--icon fa-solid fa-hotel"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class = "app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__colum-2">
+                        <nav class="category">
+                            <h3 class="category__heading"><i class="category__heading-icon fa-solid fa-list"></i> Danh mục</h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Tất Cả phòng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Loại phòng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đăng kí phòng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sơ đồ trực quan theo tầng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Dịch vụ</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Hỗ trợ</a>
+                                </li>
+                            </ul>
+                        </nav>
+    
+                    </div>
+                    <div class="grid__colum-8">
+                        <div class="home-filter">
+                             <button class="btn">TRANG CHỦ</button>
+                             <button class="btn">MÔ HÌNH QUẢN LÍ</button>
+                             <button class="btn">GIẢI PHÁP</button>
+                             <button class="btn">BLOG</button>
+                             <button class="btn">THÊM</button>
+                             <div class="home-file__page">
+                                 <span class="home-file__page-num">
+                                     <span class="home-file__page-curent">1</span>
+                                     /4
+                                 </span>
+                                 <div class="home-file__page-control">
+                                     <a href="" class="home-file__page-btn">
+                                         <i class="fa-solid fa-chevron-left"></i>
+                                     </a>
+                                     <a href="" class="home-file__page-btn">
+                                         <i class="fa-solid fa-chevron-right"></i>
+                                     </a>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="home">
+                            <img class="home-img" src="./assets/img/main--.jpg" alt="ảnh khách sạn">
+                            <p class="home__p"> - Ý tưởng về quản lý chuỗi khách sạn có thể bao gồm các tính năng sau:</p>
+                            <ul class="home__list">
+                                <li class="home__item"> Quản lý đặt phòng: cho phép quản lý đặt phòng của khách hàng với các thông tin liên quan như loại phòng, giá cả, thời gian ở, số lượng khách, và các yêu cầu đặc biệt.</li>
+                                <li class="home__item">Quản lý phòng: cho phép quản lý thông tin phòng khách sạn, bao gồm tình trạng sẵn có, giá cả, diện tích, tiện nghi, mô tả và hình ảnh.</li>
+                                <li class="home__item">Quản lý nhân viên: cho phép quản lý thông tin nhân viên, bao gồm tên, chức vụ, lịch làm việc, mức lương và thông tin liên lạc.</li>
+                                <li class="home__item">Quản lý tài chính: cung cấp báo cáo về doanh thu, lợi nhuận, chi phí, lương bổng, thuế và các khoản chi phí khác.</li>
+                                <li class="home__item">Quản lý khách hàng: cho phép quản lý thông tin khách hàng, bao gồm tên, địa chỉ, số điện thoại, email và lịch sử đặt phòng.</li>
+                                <li class="home__item">Quản lý chuỗi khách sạn: cho phép quản lý thông tin về các khách sạn trong chuỗi, bao gồm tên khách sạn, vị trí, mô tả, số phòng, giá cả và các dịch vụ.</li>
+                                <li class="home__item">Hỗ trợ đặt phòng trực tuyến: Cho phép khách hàng đặt phòng trực tuyến qua website hoặc ứng dụng di động của khách sạn, với các thông tin liên quan như loại phòng, giá cả, thời gian ở, số lượng khách và các yêu cầu đặc biệt.</li>
+                                <li class="home__item">Hỗ trợ thanh toán trực tuyến: Cho phép khách hàng thanh toán trực tuyến qua các hình thức như ví điện tử, thẻ tín dụng hoặc chuyển khoản.</li>
+                                <li class="home__item">Tích hợp chatbot: Tích hợp chatbot để hỗ trợ khách hàng trực tuyến, trả lời các câu hỏi liên quan đến thông tin phòng, giá cả và hướng</li>
+                            </ul>
+                            <p class="home__pp">
+                               - Một hệ thống quản lý chuỗi khách sạn có thể hỗ trợ chúng ta trong nhiều khía cạnh khác nhau bao gồm:
+                            </p>
+                            <p class="home__p-item">
+                                +Tối ưu hóa hoạt động kinh doanh: Hệ thống này giúp quản lý kiểm soát hoạt động kinh doanh một cách tốt hơn, đặc biệt là trong việc quản lý đặt phòng, quản lý phòng, nhân viên và tài chính. Các tính năng này giúp quản lý dễ dàng theo dõi hoạt động kinh doanh của mình và đưa ra các quyết định kinh doanh chính xác hơn.
+                            </p>
+                            <p class="home__p-item"> 
+                                +Nâng cao trải nghiệm khách hàng: Hệ thống quản lý chuỗi khách sạn giúp thu hút khách hàng bằng tính năng đặt phòng và thanh toán trực tuyến, chatbot hỗ trợ và hỗ trợ đa ngôn ngữ. Điều này giúp tăng tính tiện lợi cho khách hàng và cải thiện trải nghiệm của họ khi sử dụng dịch vụ khách sạn.
+                            </p>
+                            <p class="home__p-item">
+                                +Tăng tính minh bạch và hiệu quả: Hệ thống này giúp quản lý dễ dàng kiểm soát chi phí và lợi nhuận của mình, tạo ra các báo cáo tài chính để đánh giá hoạt động kinh doanh và giám sát hiệu quả của các chiến lược kinh doanh.
+                            </p>
+                            <p class="home__p-item">
+                                +Quản lý được chuỗi khách sạn: Hệ thống quản lý chuỗi khách sạn giúp quản lý dễ dàng quản lý các khách sạn của mình, bao gồm quản lý thông tin khách sạn, số phòng, giá cả và các dịch vụ, giúp quản lý chuỗi khách sạn của mình hiệu quả hơn.
+                            </p>
+                            <p class="home__p-item">
+                                +Tóm lại, hệ thống quản lý chuỗi khách sạn giúp tăng tính hiệu quả trong quản lý kinh doanh, tăng tính tiện lợi và trải nghiệm khách hàng, tăng tính minh bạch và giúp quản lý hiệu quả chuỗi khách sạn
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class = "footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__colum-4">
+                        <h3 class="footer-heading">Liên hệ với chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a class = "imgg" href="https://www.facebook.com/profile.php?id=100049491942277&mibextid=ZbWKwL">
+                                    Facebook  <i class=" iconn fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer-item">Số điện thoại </li>
+                            <li class="footer-item">0865180747</li>
+                        </ul>
+                    </div>
+                    <div class="grid__colum-4">
+                        <h3 class="footer-heading">Hỗ trợ khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">Hướng dẫn đặt phòng</li>
+                            <li class="footer-item">Tư vấn</li>
+                        </ul>
+                    </div>
+                    <div class="grid__colum-4">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">Giới thiêu</li>
+                            <li class="footer-item">Tuyển dụng</li>
+                            <li class="footer-item">Điều khoản</li>
+
+                        </ul>
+                    </div>
+                    <div class="grid__colum-4">
+                        <h3 class="footer-heading">Nhóm thực hiện gồm</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a class = "imgg" href="https://www.facebook.com/profile.php?id=100049491942277&mibextid=ZbWKwL">Đoàn Quốc Huy</a>
+                            </li>
+                            <li class="footer-item">Trần Nguyễn Quốc Chấn </li>
+                            <li class="footer-item">Hoàng Huy Hiển</li>
+                            <li class="footer-item">Nguyễn Văn Chiến</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+   
+</body>
+</html>
